@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>EARLE — Coming Soon</title>
+  <meta
+    name="description"
+    content="EARLE is preparing a more radiant, thoughtful wellness experience."
+  >
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f7eee6">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: #f7eee6;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    .earle-page {
+      width: 100vw;
+      height: 100dvh;
+      overflow: hidden;
+      background: #f7eee6;
+    }
+
+    .earle-page picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .earle-page img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    /* Desktop */
+    @media (min-width: 769px) {
+      .earle-page img {
+        object-position: center center;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .earle-page img {
+        object-position: center center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="earle-page">
+    <picture>
+      <source
+        media="(max-width: 768px)"
+        srcset="earle-404-mobile.png"
+      >
+
+      <img
+        src="earle-404-desktop.png"
+        alt="EARLE — Something beautiful is being formulated."
+        fetchpriority="high"
+        decoding="async"
+      >
+    </picture>
+  </main>
+</body>
+</html>
